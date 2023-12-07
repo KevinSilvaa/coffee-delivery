@@ -1,0 +1,38 @@
+// Styling Imports
+import { HeaderContainer } from "./styles";
+
+// Strategic Imports
+import { Link, NavLink } from "react-router-dom";
+
+// Image Imports
+import logoCoffeeDelivery from "../../assets/logo-coffee-delivery.svg"
+import { ShoppingCart, MapPin } from "phosphor-react";
+
+export function Header() {
+  const cart = [];
+
+  return (
+    <HeaderContainer>
+      <Link to="/">
+        <img src={logoCoffeeDelivery} />
+      </Link>
+
+      <nav>
+        <NavLink to={"https://maps.app.goo.gl/WR2kAXgeUjiMXBPy7"} target="_blank" title="Localização da loja">
+          <MapPin
+            size={22}
+            weight="fill"
+          />
+          Porto Alegre, RS
+        </NavLink>
+        <NavLink to="/cart" title="Carrinho de compras">
+          <ShoppingCart
+            size={22}
+            weight="fill"
+          />
+          {cart.length > 0 ? <span>{cart.length}</span> : null}
+        </NavLink>
+      </nav>
+    </HeaderContainer>
+  );
+}
