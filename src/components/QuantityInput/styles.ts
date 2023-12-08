@@ -13,6 +13,12 @@ export const QuantityInputContainer = styled.div`
     background: transparent;
     border: none;
     color: ${({ theme }) => theme["purple"]};
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: ${({ theme }) => theme["purple-dark"]};
+    }
   }
 
   span {

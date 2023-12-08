@@ -5,6 +5,7 @@ import { GlobalStyle } from "./styles/global";
 
 import { BrowserRouter } from "react-router-dom";
 
+import { CartContextProvider } from "./contexts/CartProvider";
 import { Router } from "./Router";
 
 export function App() {
@@ -12,7 +13,9 @@ export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <BrowserRouter>
-        <Router />
+        <CartContextProvider>
+          <Router />
+        </CartContextProvider>
       </BrowserRouter>
       <GlobalStyle />
     </ThemeProvider>

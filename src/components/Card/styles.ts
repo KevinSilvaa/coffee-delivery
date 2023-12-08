@@ -96,5 +96,11 @@ export const OrderButtonsContainer = styled.div`
     background: ${({ theme }) => theme["purple-dark"]};
     border: none;
     border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background: ${({ theme }) => theme["purple"]};
+    }
   }
 `;

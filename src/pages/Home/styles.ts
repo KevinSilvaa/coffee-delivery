@@ -10,8 +10,7 @@ export const HomeContainer = styled.main`
     top: 2rem;
     left: calc(0px - 10rem);
     height: 544px;
-    width: 100vw;
-    object-fit: cover;
+    width: calc(100% + 20rem);
   }
 `;
 

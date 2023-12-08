@@ -5,6 +5,6 @@ export const LayoutContainer = styled.div`
   flex-direction: column;
   height: 100%;
   margin: auto;
-  padding: 2rem 10rem;
+  padding: 0 10rem;
   border-radius: 8px;
 `;
