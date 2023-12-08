@@ -85,7 +85,7 @@ export const Price = styled.div`
   }
 `;
 
-export const OrderButtonsContainer = styled.div`
+export const OrderButtonsContainer = styled.div<{ $isItemAdded: boolean }>`
   display: flex;
   gap: 0.5rem;
   
@@ -93,14 +93,16 @@ export const OrderButtonsContainer = styled.div`
     display: flex;
     padding: 0.5rem;
     color: ${({ theme }) => theme["white"]};
-    background: ${({ theme }) => theme["purple-dark"]};
+    background: ${({ theme, $isItemAdded }) => 
+      $isItemAdded ? theme["yellow-dark"] : theme["purple-dark"]};
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
-      background: ${({ theme }) => theme["purple"]};
+      background: ${({ theme, $isItemAdded }) => 
+        $isItemAdded ? theme["yellow"] : theme["purple"]};
     }
   }
 `;

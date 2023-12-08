@@ -3,13 +3,14 @@ import { HeaderContainer } from "./styles";
 
 // Strategic Imports
 import { Link, NavLink } from "react-router-dom";
+import { useCart } from "../../hooks/useCart";
 
 // Image Imports
 import logoCoffeeDelivery from "../../assets/logo-coffee-delivery.svg"
 import { ShoppingCart, MapPin } from "phosphor-react";
 
 export function Header() {
-  const cart = [];
+  const { cart } = useCart();
 
   return (
     <HeaderContainer>

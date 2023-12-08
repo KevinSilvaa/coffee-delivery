@@ -5,10 +5,11 @@ import { CardContainer, CardInfosContainer, CardControlsContainer, TagsContainer
 import { QuantityInput } from "../QuantityInput";
 
 //  Strategic Imports
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useCart } from "../../hooks/useCart";
 
 // Icons Imports
-import { ShoppingCart } from "phosphor-react";
+import { Check, ShoppingCart } from "phosphor-react";
 
 interface CoffeeProps {
   coffee: {
@@ -23,6 +24,9 @@ interface CoffeeProps {
 
 export function Card({ coffee }: CoffeeProps) {
   const [quantity, setQuantity] = useState(1);
+  const [isItemAdded, setIsItemAdded] = useState(false);
+
+  const { addItem } = useCart();
 
   function handleDecrementQuantity() {
     if (quantity > 1) {
@@ -33,6 +37,28 @@ export function Card({ coffee }: CoffeeProps) {
   function handleIncrementQuantity() {
     setQuantity(state => state + 1);
   }
+
+  function handleAddItem() {
+    addItem({ id: coffee.id, quantity });
+    setIsItemAdded(true);
+    setQuantity(1);
+  }
+
+  useEffect(() => {
+    let timeout: number;
+
+    if (isItemAdded) {
+      timeout = setTimeout(() => {
+        setIsItemAdded(false);
+      }, 1000)
+    }
+
+    return () => {
+      if (timeout) {
+        clearTimeout(timeout);
+      }
+    }
+  }, [isItemAdded]);
 
   return (
     <CardContainer>
@@ -55,15 +81,22 @@ export function Card({ coffee }: CoffeeProps) {
           <span>{coffee.price.toFixed(2)}</span>
         </Price>
 
-        <OrderButtonsContainer>
+        <OrderButtonsContainer $isItemAdded={isItemAdded}>
           <QuantityInput
             decrementQuantity={handleDecrementQuantity}
             incrementQuantity={handleIncrementQuantity}
             quantity={quantity}
           />
 
-          <button>
-            <ShoppingCart size={22} weight="fill" />
+          <button disabled={isItemAdded} onClick={handleAddItem}>
+            {isItemAdded ? (
+              <Check
+                size={22}
+                weight="fill"
+              />
+            ) : (
+              <ShoppingCart size={22} weight="fill" />
+            )}
           </button>
         </OrderButtonsContainer>
       </CardControlsContainer>

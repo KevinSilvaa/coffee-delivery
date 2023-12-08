@@ -197,7 +197,7 @@ export function Cart() {
                 {...register("paymentMethod")}
                 value="credit"
               >
-                <CreditCard />
+                <CreditCard size={16} />
                 <span>Cartão de crédito</span>
               </InputRadio>
 
@@ -206,7 +206,7 @@ export function Cart() {
                 {...register("paymentMethod")}
                 value="debit"
               >
-                <Bank />
+                <Bank size={16} />
                 <span>Cartão de débito</span>
               </InputRadio>
 
@@ -215,7 +215,7 @@ export function Cart() {
                 {...register("paymentMethod")}
                 value="cash"
               >
-                <Money />
+                <Money size={16} />
                 <span>Dinheiro</span>
               </InputRadio>
             </PaymentMethodInputsContainer>
@@ -232,9 +232,9 @@ export function Cart() {
           <CartProducts>
 
             {itemsInCart.map(item => (
-              <ProductContainer>
+              <ProductContainer key={item.id}>
                 <div>
-                  <img src={item.image} />
+                  <img src={`/src/${item.image}`} />
 
                   <ProductInfo>
                     <h3>Expresso tradicional</h3>

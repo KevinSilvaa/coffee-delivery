@@ -157,8 +157,9 @@ export const ProductInfo = styled.div`
       font-size: 0.75rem;
       line-height: 1.6;
       text-transform: uppercase;
-      transition: all 0.2s ease-in-out;
       padding: 0 0.5rem;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
 
       svg {
         color: ${({ theme }) => theme["purple"]};

@@ -6,7 +6,7 @@ export const InputBox = styled.div`
   gap: 0.5rem;
 `;
 
-export const InputContainer = styled.div`
+export const InputContainer = styled.label`
   display: flex;
   justify-content: space-between;
   align-items: center;
