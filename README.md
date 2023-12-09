@@ -11,7 +11,7 @@
 # ℹ️ Detalhes do projeto
 
 O <strong>Coffee Delivery</strong> é um cardápio digital de uma cafeteria que tem desde funcionalidade de adicionar itens no seu carrinho até a finalização da compra.<br>
-O principal objetivo deste projeto foi para treinar o uso de algumas ferramentas do React como o React Hook Form, Zod, Styled Components,
+O principal objetivo deste projeto foi para treinar o uso de algumas ferramentas do React como o React Hook Form, também utilizar outras bibliotecas como o Zod, Styled Components,
 e também a utilização de Hooks, Contextos e TypeScript para melhorar a tipagem do código, e principalmente, reduzir os erros.
 
 <br>
