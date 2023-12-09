@@ -237,7 +237,7 @@ export function Cart() {
                   <img src={`/src/${item.image}`} />
 
                   <ProductInfo>
-                    <h3>Expresso tradicional</h3>
+                    <h3>{item.title}</h3>
 
                     <div>
                       <QuantityInput
