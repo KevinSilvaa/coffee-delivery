@@ -5,9 +5,11 @@ import { HeaderContainer } from "./styles";
 import { Link, NavLink } from "react-router-dom";
 import { useCart } from "../../hooks/useCart";
 
+// Icons Imports
+import { ShoppingCart, MapPin } from "phosphor-react";
+
 // Image Imports
 import logoCoffeeDelivery from "../../assets/logo-coffee-delivery.svg"
-import { ShoppingCart, MapPin } from "phosphor-react";
 
 export function Header() {
   const { cart } = useCart();

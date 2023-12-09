@@ -1,8 +1,8 @@
 // Styling Imports
-import { InputHTMLAttributes, LegacyRef, forwardRef } from "react";
+import { InputRadioContainer } from "./styles";
 
 // Strategic Imports
-import { InputRadioContainer } from "./styles";
+import { InputHTMLAttributes, LegacyRef, forwardRef } from "react";
 
 type InputRadioProps = InputHTMLAttributes<HTMLInputElement> & {
   isSelected: boolean;

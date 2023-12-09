@@ -5,8 +5,8 @@ import { GlobalStyle } from "./styles/global";
 
 import { BrowserRouter } from "react-router-dom";
 
-import { CartContextProvider } from "./contexts/CartProvider";
 import { Router } from "./Router";
+import { CartContextProvider } from "./contexts/CartProvider";
 
 export function App() {
 

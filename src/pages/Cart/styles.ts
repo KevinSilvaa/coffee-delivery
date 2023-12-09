@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CartContainer = styled.main`
   display: flex;
   gap: 2rem;
-  margin-top: 2.5rem;
+  margin: 2.5rem 0 5rem;
 
   h2 {
     color: ${({ theme }) => theme["base-subtitle"]};
