@@ -62,7 +62,7 @@ export function Card({ coffee }: CoffeeProps) {
 
   return (
     <CardContainer>
-      <img src={`/src/${coffee.image}`} alt={`Imagem de um ${coffee.title}`} />
+      <img src={coffee.image} alt={`Imagem de um ${coffee.title}`} />
 
       <TagsContainer>
         {coffee.tags.map(tag => (

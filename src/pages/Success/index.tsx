@@ -16,7 +16,7 @@ import { useCart } from "../../hooks/useCart";
 import { MapPin, Clock, CurrencyDollar } from "phosphor-react";
 
 // Image Imports
-import successImage from "../../assets/success-ilustration.png";
+import successImage from "/assets/success-ilustration.png";
 
 export function Success() {
   const { orderId } = useParams();

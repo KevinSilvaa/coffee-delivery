@@ -9,7 +9,7 @@ import { useCart } from "../../hooks/useCart";
 import { ShoppingCart, MapPin } from "phosphor-react";
 
 // Image Imports
-import logoCoffeeDelivery from "../../assets/logo-coffee-delivery.svg"
+import logoCoffeeDelivery from "/assets/logo-coffee-delivery.svg"
 
 export function Header() {
   const { cart } = useCart();

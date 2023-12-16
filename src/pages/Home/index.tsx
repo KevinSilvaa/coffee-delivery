@@ -11,8 +11,8 @@ import { coffees } from "../../../data.json";
 import { ShoppingCart, Timer, Package, Coffee } from "phosphor-react";
 
 // Image Imports
-import coffeeImage from "../../assets/coffee-image.png";
-import heroBg from "../../assets/hero-bg.png";
+import coffeeImage from "/public/assets/coffee-image.png";
+import heroBg from "/public/assets/hero-bg.png";
 
 export function Home() {
 
