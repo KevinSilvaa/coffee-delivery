@@ -1,10 +1,8 @@
 <div align="center">
   <h1>Coffee Delivery ☕</h1>
 
-  <img src="https://github.com/KevinSilvaa/coffee-delivery/assets/143517496/cd96562e-3aa5-4e52-9884-833d3fe62193" />
+  ![Coffee Delivery Home](https://github.com/KevinSilvaa/coffee-delivery/assets/143517496/cd96562e-3aa5-4e52-9884-833d3fe62193)
 </div>
-
-
 
 <h3 align="center">Projeto realizado durante a trilha para especialização em ReactJS da Rocketseat</h3> <br><br>
 
@@ -37,7 +35,6 @@ do código, e principalmente, reduzir os erros.
   - `React Router Dom`; Utilizado para interagir com a DOM, principalmente com a navegação entre páginas.
   - `Phosphor Icons`; Utilizado para importar ícones de uma maneira mais simples.
   
-
 &nbsp;
 &nbsp;
 &nbsp;
