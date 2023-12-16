@@ -234,7 +234,7 @@ export function Cart() {
             {itemsInCart.map(item => (
               <ProductContainer key={item.id}>
                 <div>
-                  <img src={`/src/${item.image}`} />
+                  <img src={item.image} />
 
                   <ProductInfo>
                     <h3>{item.title}</h3>
