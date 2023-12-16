@@ -8,6 +8,13 @@
 
 <h3 align="center">Projeto realizado durante a trilha para especialização em ReactJS da Rocketseat</h3> <br><br>
 
+<div align="center">
+  <a href="https://coffee-delivery-kevinsilvaa.vercel.app" target="_blank">Veja o resultado final clicando aqui</a>
+</div>
+
+&nbsp;
+&nbsp;
+
 # ℹ️ Detalhes do projeto
 
 O <strong>Coffee Delivery</strong> é um cardápio digital de uma cafeteria que tem desde funcionalidade de adicionar itens no seu carrinho até a finalização da compra.<br>
